@@ -1,6 +1,6 @@
 {
   "name": "electron-ai-chat",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Multi AI Chat Aggregator Application",
   "repository": "wangzhen-CHN/electron-ai-chat",
   "main": "main.js",
