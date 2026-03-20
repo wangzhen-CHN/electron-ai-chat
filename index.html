@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Electron AI Chat </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- 顶部配置栏 -->
+    <div id="top-bar" class="top-bar"></div>
+
+    <!-- 第一行：动态生成的 AI 网站并排网格 -->
+    <div class="webview-grid" id="webview-grid">
+      <!-- 列表将由 renderer.js 从 ai-models.js 动态读取并插入 -->
+    </div>
+
+    <!-- 第二列：右侧全局多行输入与提问组件 -->
+    <div class="input-sidebar">
+      <textarea id="global-input" placeholder="请在此输入问题，（支持 Shift + Enter 换行 ，Enter发送）..."></textarea>
+      <button id="send-btn">发送</button>
+    </div>
+  </div>
+  <!-- 渲染进程业务逻辑 -->
+  <script src="renderer.js"></script>
+</body>
+
+</html>
