@@ -10,5 +10,20 @@
   "devDependencies": {
     "electron": "^29.1.5",
     "electron-builder": "^24.13.3"
+  },
+  "author": "wangzhen-CHN",
+  "build": {
+    "appId": "com.wangzhen.chataggregator",
+    "productName": "Electron AI Chat",
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
   }
 }
